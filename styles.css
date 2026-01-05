@@ -1,0 +1,96 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  margin: 0;
+}
+
+h1,
+h2,
+label,
+p {
+  color: white;
+}
+
+label,
+p {
+  font-weight: 600;
+}
+
+.cvt-container {
+  width: 400px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: stretch;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background:
+    radial-gradient(
+      circle at top left,
+      rgba(255, 200, 220, 0.8),
+      transparent 40%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(180, 200, 255, 0.9),
+      transparent 45%
+    ),
+    linear-gradient(
+      135deg,
+      #cbb7ff,
+      #b9d6ff,
+      #f2c6ff
+    );
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: rgba(255, 255, 255, 0.18);
+
+  backdrop-filter: blur(18px) saturate(160%);
+  -webkit-backdrop-filter: blur(18px) saturate(160%);
+
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+input {
+  width: 98%;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+}
+
+select {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+}
