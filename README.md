@@ -5,6 +5,12 @@ This project focuses on **state management**, **memoization**, and **clear logic
 
 ---
 
+## Live Site
+
+https://riiach.github.io/Currency-Converter/
+
+---
+
 ## Preview
 
 ![Current Converter Preview](assets/ConvertCurrencyPreview.png)
